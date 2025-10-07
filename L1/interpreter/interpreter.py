@@ -1,5 +1,5 @@
 def main():
-    x,y,z=input("Expression:").split(sep = " ")
+    x,y,z=input("Expression:").split()
     x,z = int(x),int(z)
     if y == "/" and z == 0:
         print("Error: Division by zero!")
@@ -14,7 +14,7 @@ def calculate(a,op,b):
     elif op == "*":
         return a * b
     elif op == "/":
-        if z == 0 :
+        if b == 0 :
             return False
         else:
             return a / b
