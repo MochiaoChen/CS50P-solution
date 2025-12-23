@@ -26,7 +26,7 @@ def is_valid(s):
     if not s.isalnum():
         return False
 
-    return Ture
+    return True
 
 
 main()
